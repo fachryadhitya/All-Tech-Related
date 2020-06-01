@@ -5,6 +5,7 @@ const List = ({ list, onRemoveItem }) =>
   list.map((item) => (
     <Item key={item.objectID} item={item} onRemoveItem={onRemoveItem} />
   ));
+  
 
 const Item = ({ item, onRemoveItem }) => (
   <div className="item">
@@ -12,11 +13,11 @@ const Item = ({ item, onRemoveItem }) => (
       <a href={item.url}>{item.title}</a>
     </span>
     <br></br>
-    <span style={{ width: "30%" }}>Author: {item.author}</span> <br></br>
-    <span style={{ width: "30%" }}>Comments: {item.num_comments}</span>{" "}
+    <span className="auth" style={{ width: "30%" }}>Author: {item.author}</span> <br></br>
+    <span className="auth" style={{ width: "10%" }}>Comments: {item.num_comments}</span>{" "}
     <br></br>
-    <span style={{ width: "30%" }}>Points: {item.points}</span> <br></br>
-    <span style={{ width: "30%" }}>
+    <span className="auth" style={{ width: "10%" }}>Points: {item.points}</span> <br></br>
+    <span style={{ width: "10%" }}>
       <button
         className="button button_small"
         type="button"

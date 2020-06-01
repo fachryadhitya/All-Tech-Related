@@ -19,7 +19,7 @@
   padding-bottom: 5px;
 }
 
-.item  span {
+.item span {
   padding: 0 5px;
   white-space: nowrap;
   overflow: hidden;
@@ -45,10 +45,9 @@
   transition: all 0.1s ease-in;
 }
 
-
 .button:hover {
- background: #171212;
- color: white;
+  background: #171212;
+  color: white;
 }
 
 .button_small {
@@ -57,7 +56,6 @@
 
 .button_large {
   padding: 10px;
-  
 }
 
 .search-form {
@@ -65,7 +63,6 @@
   display: flex;
   align-items: baseline;
 }
-
 
 .label {
   border-top: 1px solid #171212;
@@ -87,26 +84,40 @@ button:hover > svg > g {
   stroke: #fff;
 }
 
+.itemsort {
+  width: 100%;
+}
+
+.itemsort button {
+  margin-right: 275px;
+  margin-bottom: 10px;
+}
+
 @media (max-width: 500px) {
   .container {
     height: 100%;
+    max-width: 500px;
   }
 
   .search-form {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
   }
   .input {
     margin: 10px;
   }
-.item {
-  display: flex;
-}
+  .item {
+    display: inline-flex;
+  }
 
-.item span {
-  flex-wrap: wrap;
-}
-
-  .item > span > a{
+  .item span a {
     flex-wrap: wrap;
+  }
+  .button {
+    margin-top: 5px;
+  }
+
+  .auth {
+    display: none;
   }
 }
